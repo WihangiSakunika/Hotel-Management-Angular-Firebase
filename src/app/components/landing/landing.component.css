@@ -1,0 +1,167 @@
+.hero-container {
+    background: url(https://w0.peakpx.com/wallpaper/561/822/HD-wallpaper-luxury-resort-polynesia-resort-retreat-dusk-sunset-sea-lights-beach-evening-swimming-luxury-night-hotel-exotic-islands-holiday-pacific-pool-water-paradise-island-hideaway-tropical.jpg)center center no-repeat;
+    background-size: cover;
+  }
+  
+  .book-now-container {
+    padding: 35px 115px;
+  }
+  
+  .book-now-button {
+    width: 170px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #e0f802;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+  
+  .header-container {
+    height: 100vh;
+    padding: 60px 20px;
+    max-width: 608px;
+  }
+  
+  .mat-display-4 {
+    color: #ffffff;
+    margin-left: 70px;
+    margin-top: -30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .mat-display-1 {
+    color: #00ff00;
+    margin-top: -30px;
+  }
+  
+  @media all and (max-width: 768px) {
+    .hero-container {
+      height: calc(100vh - 145px);
+    }
+  }
+  
+  @media all and (max-width: 680px) {
+    .header-container .mat-display-4 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    .header-container .mat-display-1 {
+        font-size: 1.1rem;
+        line-height: 1.1;
+        margin: 0 0 15px;
+    }
+    .home-section h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  .SL {
+    transform: translate(-50%, 50%);
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .SL h3 {
+    -webkit-text-fill-color: transparent;
+    background: url(https://lmd.lk/wp-content/uploads/2019/06/SHANGRI-LA-HOTEL_1006.jpg)bottom right repeat;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-size: 200px;
+    font-family: Rubik, sans-serif;
+    letter-spacing: 0.09em;
+    font-weight: 500;
+    position: relative;
+    left: 50%;
+    top:58%;  
+  }
+  
+  .home-section {
+    position: relative;
+    padding: 100px 20px;
+    transform: transale3d(0,0,0);
+    transition: top .3s cubic-bezier(.4,0,.2,1);
+    text-align: center;
+  }
+  .home-section .mat-subheading-3 {
+    text-transform: uppercase;
+  }
+  
+  .rooms-home-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+  
+  .rooms-home-display mat-card-header h2 {
+    color: white;
+    font-size: 34.54px;	letter-spacing: 0.25px;	line-height: 43px;
+    color: rgba(0,0,0,0.87);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .rooms-home-display mat-card-header {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    height: 53px;
+    width: 100%;
+    background: linear-gradient(
+      125deg,#fff8e1 0,
+      rgba(255, 248, 225,.6)100%);
+  }
+  
+  .rooms-home-display mat-card-actions {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .rooms-home-display mat-card {
+    height: 587px;
+    position: relative;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  
+  .rooms-suites {
+    background: url(https://lmd.lk/wp-content/uploads/2019/06/SHANGRI-LA-HOTEL_1006.jpg)center center no-repeat;
+    background-size: cover;
+    height: calc(80vh - 200px);
+  }
+  .beach-houses {
+    background: url(src\assets\images\Tavern.jpg)center center no-repeat;
+    background-size: cover;
+    height: calc(80vh - 200px);
+  }
+  .entertainment {
+    background: url(https://www.extraspace.com/blog/wp-content/uploads/2018/01/Include-a-Concession-Stand.jpeg)center center no-repeat;
+    background-size: cover;
+    height: calc(80vh - 200px);
+  }
+  .mall {
+    background: url(https://aaafashionconsultancy.com/wp-content/uploads/2015/02/dlf-emporio-exterior-final1.jpg)center center no-repeat;
+    background-size: cover;
+    height: calc(80vh - 200px);
+  }
+  
+  button {
+      min-height: 40px;
+      min-width: 141px;
+  }
+  
+  @media all and (max-width: 1280px) {
+    .SL h3,
+    .SL {
+      display: none;
+    }
+  
+  }

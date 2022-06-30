@@ -1,0 +1,28 @@
+
+  body{
+    background-color: aqua;
+  }
+  .form-container {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+  
+    background: #eceff1;
+    padding: 48px;
+    border-radius: 16px;
+  
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .margin-top {
+    margin-top: 16px !important;
+  }
+  .button{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 35px;
+  }

@@ -1,0 +1,41 @@
+<div class="navtabs-container">
+    <nav mat-tab-nav-bar mat-tab-nav-bar fxFlex fxLayout fxLayoutAlign="center center" class="navtab">
+      <a mat-tab-link routerLink="/"
+       routerLinkActive #home="routerLinkActive"
+       [active]="home.isActive">
+       Home
+       </a>
+  
+       <button mat-button [matMenuTriggerFor]="belowMenu" routerLinkActive #accomerdation="routerLinkActive">
+        Accomerdation
+       </button>
+         <mat-menu #belowMenu="matMenu" yPosition="below">
+            <button mat-menu-item routerLink="/accomerdation">Accomerdation</button>
+           <button mat-menu-item routerLink="/Food-beverage">Food & Beverage</button>
+           
+         </mat-menu>
+<!-- ---------------------- -->
+          <button mat-button [matMenuTriggerFor]="menu">Life Style</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/expericence">Experience</button>
+            <button mat-menu-item routerLink="/resort-activites">Resort Activites</button>
+            <button mat-menu-item routerLink="wellness">Wellness Life</button>
+          </mat-menu>
+<!-- ---------------------- -->
+        <button mat-button [matMenuTriggerFor]="animals">Celebarations</button>
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item routerLink="/Celebrtion">Celebration</button>
+          <button mat-menu-item [matMenuTriggerFor]="weddings">Weddings</button>
+        </mat-menu>
+        <mat-menu #weddings="matMenu">
+          <button mat-menu-item routerLink="/Wedding">Weddings</button>
+          <button mat-menu-item routerLink="/Our Bridal Suite">Special Weddings</button>
+        </mat-menu>
+<!--  ------------>
+          <a mat-tab-link routerLink="/contact" routerLinkActive >Connect Us</a>
+<!-- ---------------- -->
+          <a mat-tab-link routerLink="/offers" routerLinkActive >OFFERS</a>
+<!-- ------------- -->
+        <a mat-tab-link routerLink="/Booking" routerLinkActive >Book Now</a>
+    </nav>
+  </div>

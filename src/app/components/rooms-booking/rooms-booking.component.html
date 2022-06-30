@@ -1,0 +1,87 @@
+<div class="hero-container">
+<div class="form-container mat-elevation-z5">
+    <h1>Make Your Reservation</h1>
+    <form action="" [formGroup]="this.BookingService.form" (ngSubmit)="onSubmit()">
+        <input type="hidden" formControlName="$key">
+        <table>
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Check - IN" required formControlName="checkIn">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Check - Out" required formControlName="checkOut">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput type="number" placeholder="No. Rooms"  min="1" required formControlName="NoRooms">
+                      </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <mat-select placeholder="Room Type" required formControlName="RoomType">
+                          <mat-option value="option">SUPERIOR ROOM</mat-option>
+                          <mat-option value="option">DELUXE ROOM</mat-option>
+                          <mat-option value="option">PREMIUM ROOM</mat-option>
+                          <mat-option value="option">EXECUTIVE ROOM</mat-option>
+                          <mat-option value="option">Golden SUITES</mat-option>
+                          <mat-option value="option">THE ELVIRA SUITE</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput type="number" placeholder="Adult"  min="1" required formControlName="Adult">
+                      </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput type="number" placeholder="Children"  min="1" required formControlName="Childern">
+                      </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="First Name" required formControlName="FirstName">
+                      </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Last Name" required formControlName="LastName">
+                      </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Enter your email"  required formControlName="email">
+                      </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="phone">
+                        <input type="tel" matInput placeholder="Contact Number" required formControlName="ContactNumber">
+                      </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <button mat-raised-button color="accent" type="submit" value="submit" >INQUIRE NOW</button>
+    </form>
+    <div class="alert alert-info" *ngIf="showSuccessMessage">
+        Submitted SuccessFully !!!!
+    </div>
+</div>
+</div>
+            
+

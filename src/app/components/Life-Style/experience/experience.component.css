@@ -1,0 +1,13 @@
+.text{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+.card-title{
+ font-size: 30px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    margin-left: 20px;
+}

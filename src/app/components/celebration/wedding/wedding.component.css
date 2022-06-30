@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h3{
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+hr{
+    background-color: blueviolet;
+}
+th{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+tr{
+    margin-top: 16px;
+}

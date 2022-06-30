@@ -1,0 +1,42 @@
+<div class="form-container">
+	<h1>Let us help you!</h1>
+	<p>If you wish to get in touch with us for bookings, queries, comments or anything else you may need, please feel free to contact us via any of the following ways:</p>
+	<form  class="form-group" [formGroup]="contactForm" >
+			<mat-form-field appearance="fill">
+				<mat-label>Your Name</mat-label>
+				<input matInput formControlName="name">
+			</mat-form-field>
+
+			<mat-form-field appearance="fill">
+				<mat-label>E-mail</mat-label>
+				<input matInput formControlName="email" >
+			</mat-form-field>
+
+			<mat-form-field appearance="fill">
+				<mat-label>REASON FOR INQUIRY</mat-label>
+				<mat-select formControlName="subject" >
+				<mat-option value="one">Make or change reservation</mat-option>
+				<mat-option value="two">wedding / Renewal of vow</mat-option>
+				<mat-option value="tree">Airport tranfer</mat-option>
+				<mat-option value="four">Urgent Request</mat-option>
+				<mat-option value="five">General question</mat-option>
+				<mat-option value="six">plan an event</mat-option>
+				<mat-option value="seven">Experience / recration action</mat-option>
+				<mat-option value="eight">Surfing</mat-option>
+				<mat-option value="nine">Lost items</mat-option>
+				<mat-option value="ten">Dinning expirence</mat-option>
+				<mat-option value="eleven"> comment or feedback</mat-option>
+				</mat-select>
+			</mat-form-field>
+
+			<mat-form-field appearance="fill">
+				<mat-label>Textarea</mat-label>
+				<textarea matInput formControlName="message"></textarea>
+			</mat-form-field>
+			<div class="center margin-top">
+				<button mat-raised-button color="accent" type="submit"
+				[disabled]="contactForm.invalid" (click)="onSaveOrUpdate()"
+				>Submit</button>
+			</div>
+	</form>
+</div>

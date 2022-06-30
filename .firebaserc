@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "hotel-booking-system-b6c6b"
+  },
+  "targets": {
+    "hotel-booking-system-b6c6b": {
+      "hosting": {
+        "Hotel": [
+          "hotel-booking-system-b6c6b"
+        ]
+      }
+    }
+  }
+}

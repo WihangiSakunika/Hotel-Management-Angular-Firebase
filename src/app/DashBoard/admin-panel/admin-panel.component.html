@@ -1,0 +1,39 @@
+<form class="form-inline">
+    <input class="form-control" name="searchInput" placeholder="Search" #searchInput="ngModel" [(ngModel)]="searchText" style="width: 80%;">
+    <button class="btn btn-outline-primary" (click)="searchText=''">X</button>
+  </form>
+<table class="table table-sm">
+    <thead>
+        <th>checkIn</th>
+        <th>CheckOut</th>
+        <th>No Rooms</th>
+        <th>Room Type</th>
+        <th>Adults</th>
+        <th>Childern<th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+    </thead>
+    <ng-container *ngFor="let booking of bookingArray">
+        <tr class="table-light">
+            <td>{{booking.checkIn}}</td>
+            <td>{{booking.checkOut}}</td>
+            <td>{{booking.NoRooms}}</td>
+            <td>{{booking.RoomType}}</td>
+            <td>{{booking.Adult}}</td>
+            <td>{{booking.Childern}}</td>
+            <td>{{booking.FirstName}}</td>
+            <td>{{booking.LastName}}</td>
+            <td>{{booking.email}}</td>
+            <td>{{booking.ContactNumber}}</td>
+            <td>
+                <button class="btn btn-outline-info" (click)="BookingService.populateForm(booking)">Edit</button>
+                <button class="btn btn-outline-danger" (click)="onDelete(booking.$key)">Delete</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>
+<div class="alert alert-danger" *ngIf="showDeletedMessage">
+Delete Succeffully....!!!
+</div>

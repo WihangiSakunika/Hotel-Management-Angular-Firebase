@@ -1,0 +1,19 @@
+.text{
+    font-size: 45px;
+    margin-top: 15px;
+    text-align: center;
+}
+.text1{
+    margin-top: 15px;
+    text-align: center;
+}
+.card{
+    border-radius: 5px;
+    border-color: rgb(0, 238, 255);
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-size: 25px;
+    font-family: fantasy;
+}

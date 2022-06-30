@@ -1,0 +1,29 @@
+.paragraph{
+    text-align: center;
+    font-size: 15px;
+    font-family: cursive;
+}
+.text{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
+hr{
+    height: 20px;
+}
+hr{
+  height: 3px;
+  width: 200px;
+  margin-left: 500px;
+  background-color: #0602fc;
+}
+.card{
+margin-left: 200px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-color: #464677;
+}
+.card-title{
+    font-size: 25px;
+}
