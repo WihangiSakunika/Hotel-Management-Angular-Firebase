@@ -1,7 +1,7 @@
 <div class="hero-container">
 <div class="form-container mat-elevation-z5">
     <h1>Make Your Reservation</h1>
-    <form action="" [formGroup]="this.BookingService.form" (ngSubmit)="onSubmit()">
+    <form action="" [formGroup]="customForm" (ngSubmit)="onSaveOrUpdate()">
         <input type="hidden" formControlName="$key">
         <table>
             <tr>
@@ -78,10 +78,11 @@
         </table>
         <button mat-raised-button color="accent" type="submit" value="submit" >INQUIRE NOW</button>
     </form>
-    <div class="alert alert-info" *ngIf="showSuccessMessage">
+    <!-- <div class="alert alert-info" *ngIf="showSuccessMessage"> -->
+    <div class="alert alert-info" >
         Submitted SuccessFully !!!!
     </div>
 </div>
 </div>
-            
+
 
