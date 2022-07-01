@@ -80,11 +80,11 @@ export class BookingService {
     //return this.http.get(`${this.baseAPIUrl}/customer.json`).pipe(map((res) => {
     return this.http.get(`${environment.baseAPIUrl}/customer.json`).pipe(map((res) => {
       const custom:any[] = [];
-      for(const key in res){
-        if(res.hasOwnProperty(key)){
-          custom.push({...res[$key], id: key});
-        }
-      }
+      // for(const key in res){
+      //   if(res.hasOwnProperty(key)){
+      //     custom.push({...res[key], id: key});
+      //   }
+      // }
       return custom;
     }));
   }
